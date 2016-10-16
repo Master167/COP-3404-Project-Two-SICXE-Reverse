@@ -1,0 +1,31 @@
+COP 3404: Intro to System Software Project 2
+
+Purpose: Create a SIC or SIC/XE program that will have 10 Integers initialized memory in some order. Then reverse the order of the Integers in memory.
+
+Required:
+SIC Program assembler
+SIC Simulator
+Source Code (sicpgm)
+
+To Execute:
+Assemble the source code using SIC Assembler. This will generate two files a .obj file and a .lst file.
+$ sicasm sicpgm
+
+Start the SIC simulator with the .obj file you generated.
+$ sicsim sicpgm.obj
+
+In the Simulator, You will need to rename the first file after 'loader'. At the prompt, enter R to Rename files then press the Enter until the 'loader' appears then hit enter one more time.
+
+Then enter the .obj you used when you started the SIC simulator.
+
+Hit Enter until you get the Accept and Rename prompt again.
+
+Enter A to accept the files.
+
+At the Next Prompt, Start the simulator with the Start (S) command.
+
+Enter the Run (R) command until an error appears say that it attempted to read past a file.
+
+To see the contents in memory of the program, enter the Dump (D) command and the memory address for the program 100-220
+
+Output: sic.log containing all the commands entered and the results of the SIC simulator
